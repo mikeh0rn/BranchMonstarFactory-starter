@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NAx-mj-jgR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,161 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BranchMonstarFactory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcw-k9-ekq">
+                                <rect key="frame" x="69" y="156" width="82" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="4VE-rS-E9i"/>
+                                    <constraint firstAttribute="height" constant="216" id="MHd-ke-vTE"/>
+                                </constraints>
+                                <state key="normal" image="Bang"/>
+                                <connections>
+                                    <action selector="selectMonstarWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coh-wd-Mv4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVx-c8-jH0">
+                                <rect key="frame" x="171" y="148" width="166" height="300"/>
+                                <state key="normal" image="Blanko"/>
+                                <connections>
+                                    <action selector="selectMonstarWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOY-Rw-DeF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-Wd-nZo">
+                                <rect key="frame" x="230" y="456" width="115" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="9WF-oC-1Jz"/>
+                                    <constraint firstAttribute="height" constant="139" id="V1P-8l-WMf"/>
+                                </constraints>
+                                <state key="normal" image="Pound"/>
+                                <connections>
+                                    <action selector="selectMonstarWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jWA-8Q-UVJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cd-sr-fW4">
+                                <rect key="frame" x="152" y="502" width="71" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="K2u-Ah-L6I"/>
+                                    <constraint firstAttribute="height" constant="143" id="tMv-kf-tLt"/>
+                                </constraints>
+                                <state key="normal" image="Nawt"/>
+                                <connections>
+                                    <action selector="selectMonstarWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUV-Vc-AXK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQs-Wq-kZe">
+                                <rect key="frame" x="16" y="398" width="126" height="171"/>
+                                <state key="normal" image="Bupkus"/>
+                                <connections>
+                                    <action selector="selectMonstarWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYw-6K-wu8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monstarslogo" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-kx-qpi">
+                                <rect key="frame" x="111" y="76" width="154" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="VZd-KH-i78"/>
+                                    <constraint firstAttribute="height" constant="64" id="sbt-ip-88E"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qcw-k9-ekq" firstAttribute="top" secondItem="Tad-kx-qpi" secondAttribute="bottom" constant="16" id="2Wl-zg-5Ft"/>
+                            <constraint firstItem="7cd-sr-fW4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9i4-xr-Upi"/>
+                            <constraint firstItem="OQs-Wq-kZe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nyg-Az-Bxi"/>
+                            <constraint firstItem="Tad-kx-qpi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="0.5" id="Swo-eC-Eem"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OQs-Wq-kZe" secondAttribute="bottom" constant="98" id="Vwb-Ih-pqg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XVx-c8-jH0" secondAttribute="trailing" constant="38" id="Yi0-bm-10e"/>
+                            <constraint firstItem="7cd-sr-fW4" firstAttribute="leading" secondItem="OQs-Wq-kZe" secondAttribute="trailing" constant="10" id="Znf-J0-gcm"/>
+                            <constraint firstItem="hcy-Wd-nZo" firstAttribute="top" secondItem="XVx-c8-jH0" secondAttribute="bottom" constant="8" symbolic="YES" id="aZe-2c-PEi"/>
+                            <constraint firstItem="7cd-sr-fW4" firstAttribute="top" secondItem="XVx-c8-jH0" secondAttribute="bottom" constant="54" id="cOA-w3-7ur"/>
+                            <constraint firstItem="XVx-c8-jH0" firstAttribute="leading" secondItem="Qcw-k9-ekq" secondAttribute="trailing" constant="20" id="elv-7q-eRI"/>
+                            <constraint firstItem="XVx-c8-jH0" firstAttribute="top" secondItem="Tad-kx-qpi" secondAttribute="bottom" constant="8" id="jB5-N2-Pzy"/>
+                            <constraint firstItem="OQs-Wq-kZe" firstAttribute="top" secondItem="Qcw-k9-ekq" secondAttribute="bottom" constant="26" id="n9F-cT-gDH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcy-Wd-nZo" secondAttribute="trailing" constant="30" id="o2t-0P-bR2"/>
+                            <constraint firstItem="Tad-kx-qpi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="ptV-ud-ixv"/>
+                            <constraint firstItem="hcy-Wd-nZo" firstAttribute="leading" secondItem="7cd-sr-fW4" secondAttribute="trailing" constant="7" id="yRg-d5-BZw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7dS-Pe-qZh"/>
+                    <connections>
+                        <segue destination="g6C-a4-2Yn" kind="show" identifier="segueToMonstarDetailViewController" id="bcz-23-zKe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--Monstar Detail View Controller-->
+        <scene sceneID="YPX-sE-QPW">
+            <objects>
+                <viewController id="g6C-a4-2Yn" customClass="MonstarDetailViewController" customModule="BranchMonstarFactory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mer-rD-2Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uN9-ZA-PtN">
+                                <rect key="frame" x="16" y="143" width="343" height="504"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="504" id="woF-78-Edt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-4c-Urg">
+                                <rect key="frame" x="166.5" y="94" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uN9-ZA-PtN" secondAttribute="bottom" constant="20" symbolic="YES" id="1nH-sr-GhO"/>
+                            <constraint firstItem="uN9-ZA-PtN" firstAttribute="top" secondItem="AuS-4c-Urg" secondAttribute="bottom" constant="28" id="Dg8-JK-YXl"/>
+                            <constraint firstItem="uN9-ZA-PtN" firstAttribute="centerX" secondItem="Rq2-OW-cbZ" secondAttribute="centerX" id="Zg7-2k-1eT"/>
+                            <constraint firstItem="uN9-ZA-PtN" firstAttribute="leading" secondItem="mer-rD-2Eb" secondAttribute="leadingMargin" id="rnd-Xg-Y84"/>
+                            <constraint firstItem="AuS-4c-Urg" firstAttribute="top" secondItem="Rq2-OW-cbZ" secondAttribute="top" constant="30" id="ryb-Yy-C0t"/>
+                            <constraint firstItem="AuS-4c-Urg" firstAttribute="centerX" secondItem="Rq2-OW-cbZ" secondAttribute="centerX" id="sNm-XK-kff"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rq2-OW-cbZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="branchLinkLabel" destination="AuS-4c-Urg" id="M3F-9H-chC"/>
+                        <outlet property="largeMonstarImageView" destination="uN9-ZA-PtN" id="xDf-60-qjs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u21-vB-pPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.8" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9wh-Do-ss3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NAx-mj-jgR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n5J-1n-SHi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ahd-C8-jXu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgn-ZZ-54C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bang" width="114" height="300"/>
+        <image name="Blanko" width="166" height="300"/>
+        <image name="Bupkus" width="219" height="300"/>
+        <image name="Nawt" width="152" height="299"/>
+        <image name="Pound" width="248" height="300"/>
+        <image name="monstarslogo" width="415" height="415"/>
+    </resources>
 </document>

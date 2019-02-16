@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C02248422177F6A006069A1 /* MonstarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02248322177F6A006069A1 /* MonstarDetailViewController.swift */; };
 		8C2F33912214DF8800870D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F33902214DF8800870D46 /* AppDelegate.swift */; };
 		8C2F33932214DF8800870D46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F33922214DF8800870D46 /* ViewController.swift */; };
 		8C2F33962214DF8800870D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F33942214DF8800870D46 /* Main.storyboard */; };
 		8C2F33982214DF8900870D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F33972214DF8900870D46 /* Assets.xcassets */; };
 		8C2F339B2214DF8900870D46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F33992214DF8900870D46 /* LaunchScreen.storyboard */; };
+		DAB097CE95F5D54C2E2D6F37 /* Pods_BranchMonstarFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEBAB92951B7F23984500CF /* Pods_BranchMonstarFactory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AEBAB92951B7F23984500CF /* Pods_BranchMonstarFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BranchMonstarFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C02248322177F6A006069A1 /* MonstarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstarDetailViewController.swift; sourceTree = "<group>"; };
 		8C2F338D2214DF8800870D46 /* BranchMonstarFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BranchMonstarFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2F33902214DF8800870D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2F33922214DF8800870D46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		8C2F33972214DF8900870D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2F339A2214DF8900870D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C2F339C2214DF8900870D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5ECFDADE1AA68CE1CAA9293 /* Pods-BranchMonstarFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BranchMonstarFactory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BranchMonstarFactory/Pods-BranchMonstarFactory.debug.xcconfig"; sourceTree = "<group>"; };
+		DD78320BC6B8C4B548A12C57 /* Pods-BranchMonstarFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BranchMonstarFactory.release.xcconfig"; path = "Pods/Target Support Files/Pods-BranchMonstarFactory/Pods-BranchMonstarFactory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB097CE95F5D54C2E2D6F37 /* Pods_BranchMonstarFactory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30A9C4D257A3A4144D314B2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5ECFDADE1AA68CE1CAA9293 /* Pods-BranchMonstarFactory.debug.xcconfig */,
+				DD78320BC6B8C4B548A12C57 /* Pods-BranchMonstarFactory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36546D28F647CFBCA4CAB529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AEBAB92951B7F23984500CF /* Pods_BranchMonstarFactory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8C2F33842214DF8800870D46 = {
 			isa = PBXGroup;
 			children = (
 				8C2F338F2214DF8800870D46 /* BranchMonstarFactory */,
 				8C2F338E2214DF8800870D46 /* Products */,
+				30A9C4D257A3A4144D314B2E /* Pods */,
+				36546D28F647CFBCA4CAB529 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				8C2F33972214DF8900870D46 /* Assets.xcassets */,
 				8C2F33992214DF8900870D46 /* LaunchScreen.storyboard */,
 				8C2F339C2214DF8900870D46 /* Info.plist */,
+				8C02248322177F6A006069A1 /* MonstarDetailViewController.swift */,
 			);
 			path = BranchMonstarFactory;
 			sourceTree = "<group>";
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C2F339F2214DF8900870D46 /* Build configuration list for PBXNativeTarget "BranchMonstarFactory" */;
 			buildPhases = (
+				E144879240DDF6ED3F3E842A /* [CP] Check Pods Manifest.lock */,
 				8C2F33892214DF8800870D46 /* Sources */,
 				8C2F338A2214DF8800870D46 /* Frameworks */,
 				8C2F338B2214DF8800870D46 /* Resources */,
+				978CD882980B4E5A64293068 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		978CD882980B4E5A64293068 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BranchMonstarFactory/Pods-BranchMonstarFactory-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Branch/Branch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Branch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BranchMonstarFactory/Pods-BranchMonstarFactory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E144879240DDF6ED3F3E842A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BranchMonstarFactory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C2F33892214DF8800870D46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +213,7 @@
 			files = (
 				8C2F33932214DF8800870D46 /* ViewController.swift in Sources */,
 				8C2F33912214DF8800870D46 /* AppDelegate.swift in Sources */,
+				8C02248422177F6A006069A1 /* MonstarDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +357,7 @@
 		};
 		8C2F33A02214DF8900870D46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5ECFDADE1AA68CE1CAA9293 /* Pods-BranchMonstarFactory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		8C2F33A12214DF8900870D46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD78320BC6B8C4B548A12C57 /* Pods-BranchMonstarFactory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
