@@ -11,17 +11,18 @@ import UIKit
 class MonstarDetailViewController: UIViewController {
 
     var largeMonstarImageName = ""
+    var monstarUrl = ""
+    
     @IBOutlet weak var largeMonstarImageView: UIImageView!
     @IBOutlet weak var branchLinkLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("what is the largeMonstarImageName", largeMonstarImageName)
-        largeMonstarImageView.image = UIImage(named: largeMonstarImageName)
-        branchLinkLabel.text = "BRANCH LINK!"
 
-        // Do any additional setup after loading the view.
+        largeMonstarImageView.image = UIImage(named: largeMonstarImageName)
+        branchLinkLabel.text = monstarUrl
+        
+        
     }
     
     
