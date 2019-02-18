@@ -7,13 +7,9 @@
 //
 
 import UIKit
-import Branch
 
 class ViewController: UIViewController {
 
-    private var largeMonstarImageName = ""
-    private var monstarUrl = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let buo = BranchUniversalObject.init(canonicalIdentifier: "monstar/\(UUID.init().uuidString)")
